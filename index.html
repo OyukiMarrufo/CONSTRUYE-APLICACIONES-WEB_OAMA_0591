@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SEPTIEMBRE - Inicio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+        font-family: 'Bodoni MT Condensed', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        }
+         /* --- Encabezado --- */
+        header {
+        background-color: red;
+        padding: 25px;
+        color: white;
+        display: table;
+        width: 100%;
+        box-sizing: border-box;
+        }
+        .header-col {
+        display: table-cell;
+        vertical-align: middle;
+        }
+        /* --- Imagen lado izquierdo --- */
+        .col-logo-izq { 
+        width: 30%; 
+        text-align: left; 
+        padding-left: 30px; 
+        }
+
+        .col-titulo { 
+        width: 50%; 
+        text-align: center; 
+        }
+
+        /* --- Imagen lado derecho --- */
+        .col-logo-der { 
+        width: 30%; 
+        text-align: right; 
+        padding-right: 30px; 
+        } 
+
+        header img { 
+        max-width: 150px; 
+        height: auto; 
+        }
+
+        header h1 { 
+        margin: 0; 
+        font-size: 100px; 
+        text-transform: uppercase; 
+        letter-spacing: 40px; 
+        }
+
+        header p { 
+        margin: 5px 0 0 0; 
+        font-size: 18px; 
+        } 
+
+        /* --- Barra de navegacion --- */
+        nav { background-color: green; padding: 10px 0; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }
+        nav ul li { display: inline; margin: 0 20px; }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }
+
+        /* --- Cuerpo --- */
+        .contenedor-cuerpo {
+            padding: 40px;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenido-flex {
+            display: flex;
+            align-items: center; /* Alinea verticalmente al centro */
+            justify-content: center;
+            gap: 40px; /* Espacio entre el texto y la imagen */
+            text-align: left; /* Alinea el texto a la izquierda para mejor lectura */
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .imagen-centro {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        article {
+            flex: 1;
+        }
+
+        h1.titulo-seccion { 
+            color: #006400; 
+            margin-bottom: 15px; 
+            font-size: 36px;
+        }
+
+        .texto-inicio {
+            font-size: 22px;
+            line-height: 1.4;
+            color: #333;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* --- Pie de pagina --- */
+        footer {
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-col col-logo-izq">
+            <img src="cactus.jpg" alt="Cactus">
+        </div>
+        <div class="header-col col-titulo">
+            <h1>SEPTIEMBRE</h1> 
+            <p><em>"Acontecimientos mas relevantes del mes patrio"</em></p>
+        </div>
+        <div class="header-col col-logo-der">
+            <img src="muñeca.jpg" alt="Muñeca">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="fechas.html">Fechas Importantes</a></li>
+            <li><a href="personajes.html">Personajes Importantes</a></li>
+            <li><a href="datos.html">Datos Curiosos y Mitos</a></li>
+        </ul>
+    </nav>
+
+    <section class="contenedor-cuerpo">
+        <div class="contenido-flex">
+            <!-- Imagen Izquierda -->
+            <img src="bandera.png" alt="Bandera" class="imagen-centro">
+            <article>
+                <h1 class="titulo-seccion">Cultura viva en cada rincón</h1>
+                <p class="texto-inicio">
+                    Septiembre llega acompañado de banderas, papel picado, música mexicana y los colores verde, blanco y rojo en calles, escuelas, hogares y comercios. Pero detrás de la celebración existe una razón histórica: durante este mes se concentran varias fechas cívicas más importantes de México.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>Nombre completo: Marrufo Alvarado Oyuki Alejandra | No.Control: a.24308051280591 | Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>
