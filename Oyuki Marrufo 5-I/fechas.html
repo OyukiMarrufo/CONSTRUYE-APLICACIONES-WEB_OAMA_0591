@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SEPTIEMBRE - Fechas Importantes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+        font-family: 'Bodoni MT Condensed', Times, serif; 
+        margin: 0; 
+        padding: 0; 
+        background-color: white; 
+        }
+
+        header { 
+        background-color: red; 
+        padding: 25px; 
+        color: white; 
+        display: table; 
+        width: 100%; 
+        box-sizing: border-box; 
+        }
+
+        .header-col {
+        display: table-cell;
+        vertical-align: middle;
+        }
+        /* --- Imagen lado izquierdo --- */
+        .col-logo-izq { 
+        width: 30%; 
+        text-align: left; 
+        padding-left: 30px; 
+        }
+
+        .col-titulo { 
+        width: 50%; 
+        text-align: center; 
+        }
+
+        /* --- Imagen lado derecho --- */
+        .col-logo-der { 
+        width: 30%; 
+        text-align: right; 
+        padding-right: 30px; 
+        } 
+
+        header img { 
+        max-width: 150px; 
+        height: auto; 
+        }
+
+        header h1 { 
+        margin: 0; 
+        font-size: 100px; 
+        text-transform: uppercase; 
+        letter-spacing: 40px; 
+        }
+
+        header p { 
+        margin: 5px 0 0 0; 
+        font-size: 18px; 
+        } 
+        /* --- Barra de navegacion --- */
+        nav { background-color: green; padding: 10px 0; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }
+        nav ul li { display: inline; margin: 0 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 18px; }
+        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }
+
+        .contenedor-cuerpo { padding: 40px; text-align: center; min-height: 400px; }
+        h1.titulo-seccion { color: #006400; margin-bottom: 25px; }
+
+        /* Estilos de la lista de fechas */
+        .tarjeta-fecha {
+            background-color: #f9f9f9;
+            border-left: 5px solid red;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            
+            /* Distribución de 2 columnas con Flexbox */
+            display: flex;
+            align-items: stretch;
+            overflow: hidden;
+        }
+        
+        .contenido-texto {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .tarjeta-fecha h3 { margin: 0; color: #006400; font-size: 24px; }
+        .tarjeta-fecha p { margin: 5px 0 0 0; font-size: 18px; }
+
+        /* --- Estilo agregado para las imágenes enseguida de las fechas --- */
+        .imagen-fecha {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        footer { background-color: black; padding: 30px; text-align: center; color: white; font-size: 20px; width: 100%; box-sizing: border-box; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-col col-logo-izq"><img src="cactus.jpg" alt="Cactus"></div>
+        <div class="header-col col-titulo">
+            <h1>SEPTIEMBRE</h1> 
+            <p><em>"Acontecimientos mas relevantes del mes patrio"</em></p>
+        </div>
+        <div class="header-col col-logo-der"><img src="muñeca.jpg" alt="Muñeca"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fechas.html" class="activo">Fechas Importantes</a></li>
+            <li><a href="personajes.html">Personajes Importantes</a></li>
+            <li><a href="datos.html">Datos Curiosos y Mitos</a></li>
+        </ul>
+    </nav>
+
+    <section class="contenedor-cuerpo">
+        <div class="tarjeta-fecha">
+            <div class="contenido-texto">
+                <h3>13 de Septiembre de 1847</h3>
+                <h3>BATALLA DE CHAPULTEPEC:</h3>
+                <p>Ocurrió durante la guerra entre México y Estados Unidos. El ejército estadounidense, con más de 7,000 soldados, atacó el 
+                castillo que estaba defendido por menos de un millar de mexicanos.</p>
+                <p>Las fuerzas nacionales estuvieron encabezadas por el general Nicolás Bravo y el teniente coronel Felipe Santiago Xicoténcatl al frente del Batallón de San Blas</p>
+                <p>Se recuerda la muerte de seis jóvenes cadetes llamados “Los Niños
+                Héroes”: Juan de la Barrera, Juan Escutia, Francisco Márquez, Agustín
+                Melgar, Fernando Montes de Oca y Vicente Suárez</p>
+                <p>El castillo cayó en manos de las tropas invasoras tras un fuerte bombardeo y combate cuerpo a cuerpo, lo que condujo a la entrada del ejército de Estados Unidos a la Ciudad de México</p>
+            </div>
+            <!-- Imagen agregada enseguida de la fecha -->
+            <img src="batalla.jpg" alt="Batalla de Chapultepec" class="imagen-fecha">
+        </div>
+
+        <div class="tarjeta-fecha">
+            <div class="contenido-texto">
+                <h3>15 de Septiembre de 1810</h3>
+                <h3>Grito de Independencia:</h3>
+                <p>El Grito de Independencia es el acto con el que se conmemora el inicio de la lucha armada por la independencia de México, realizado cada noche del 15 de septiembre.</p>
+                <p>Existían reuniones secretas en Querétaro organizadas por Miguel
+                Domínguez y su esposa, Josefa Ortiz de Domínguez.</p>
+                Los planes fueron descubiertos por las autoridades españolas.
+                <p>Con el repique de campanas, Hidalgo reunió a los feligreses y dio una arenga con vítores a la religión, a la Virgen de Guadalupe y en rechazo al mal gobierno</p>
+                <p>Aunque el evento real fue en la madrugada del 16, la fiesta cívica se conmemora la noche del 15 de septiembre con el presidente o autoridades tocando la campana y dando el grito desde los balcones oficiales.</p>
+            </div>
+            <!-- Imagen agregada enseguida de la fecha -->
+            <img src="grito.jpg" alt="Grito de Independencia" class="imagen-fecha">
+        </div>
+
+        <div class="tarjeta-fecha">
+            <div class="contenido-texto">
+                <h3>16 de Septiembre 1810</h3>
+                <h3>Independencia de México:</h3>
+                <p>Aunque el evento real fue en la madrugada del 16, la fiesta cívica se conmemora la noche del 15 de septiembre con el presidente o autoridades tocando la campana y dando el grito desde los balcones oficiales.</p>
+                <p>Liderada por el sacerdote José María Morelos y Pavón. Creó los Sentimientos de la Nación y declaró formalmente la independencia. Concluyó con su ejecución en 1815.</p>
+                <p>Una fase de guerrillas encabezada por figuras como Vicente Guerrero y Guadalupe Victoria</p>
+                <p>Se firmó el Plan de Iguala por Agustín de Iturbide y Vicente Guerrero,uniendo a insurgentes y realistas para sellar la soberanía del país</p>
+            </div>
+            <!-- Imagen agregada enseguida de la fecha -->
+            <img src="independencia.jpg" alt="Independencia de México" class="imagen-fecha">
+        </div>
+
+        <div class="tarjeta-fecha">
+            <div class="contenido-texto">
+                <h3>27 de Septiembre de 1821</h3>
+                <h3>Consumación de la Independencia:</h3>
+                <p>El Abrazo de Acatempan (Febrero de 1821): Agustín de Iturbide y el líder insurgente Vicente Guerrero se unieron para buscar la autonomía de España</p>
+                <p>El Plan de Iguala (24 de febrero de 1821): Se proclamó este plan que estableció las "Tres Garantías": Religión, Unión e Independencia, creando el Ejército Trigarante</p>
+                <p>Los Tratados de Córdoba (Agosto de 1821): Se firmaron los acuerdos que reconocieron la soberanía de la nueva nación, llamada Imperio Mexicano.</p>
+                <p>El Acta de Independencia (28 de septiembre de 1821): Un día después de la entrada del ejército a la capital, se firmó oficialmente el acta que daba nacimiento al nuevo país</p>
+            </div>
+            <!-- Imagen agregada enseguida de la fecha -->
+            <img src="consumacion.jpg" alt="Consumación de la Independencia" class="imagen-fecha">
+        </div>
+
+        <div class="tarjeta-fecha">
+            <div class="contenido-texto">
+                <h3>30 de Septiembre de 1765</h3>
+                <h3>Natalicio de José María Morelos y Pavón:</h3>
+                <p>José María Morelos y Pavón nació el 30 de septiembre de 1765 en la ciudad de Valladolid (hoy llamada Morelia en su honor), en el estado de Michoacán,México</p>
+                <p>Sus padres fueron José Manuel Morelos, carpintero mestizo y Juana María Guadalupe Pérez Pavón de origen criollo.</p>
+                <p>El joven José María inició a trabajar a edad temprana, más adelante ingresó al Colegio de San Nicolás de su ciudad natal, tuvo la convicción de continuar con sus estudios eclesiásticos hasta su ordenación sacerdotal,vocación que le permitió conocer casi todos los pueblos que constituían la Provincia de Michoacán.</p>
+                <p>De 1811 a 1813 logró conquistar la mayor parte del sur del país. En el actual estado de Morelos, combatió en el Sitio de Cuautla, asimismo organizó el Congreso de Anáhuac y el primer cuerpo legislativo en Chilpancingo que finalmente logró aprobar la primera Constitución el 22 de octubre de 1814, después de ello, Morelos sufrió varias derrotas que lo llevaron a ser capturado. Falleció el 22 de diciembre de 1815.</p>
+            </div>
+            <!-- Imagen agregada enseguida de la fecha -->
+            <img src="morelos.png" alt="José María Morelos y Pavón" class="imagen-fecha">
+        </div>
+    </section>
+
+    <footer>
+        <p>Nombre completo: Marrufo Alvarado Oyuki Alejandra | No.Control: a.24308051280591 | Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>

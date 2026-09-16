@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SEPTIEMBRE - Datos Curiosos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+        font-family: 'Bodoni MT Condensed', Times, serif; 
+        margin: 0; 
+        padding: 0; 
+        background-color: white; 
+        }
+
+        header { 
+        background-color: red; 
+        padding: 25px; 
+        color: white; 
+        display: table; 
+        width: 100%; 
+        box-sizing: border-box; 
+        }
+
+        .header-col {
+        display: table-cell;
+        vertical-align: middle;
+        }
+        /* --- Imagen lado izquierdo --- */
+        .col-logo-izq { 
+        width: 30%; 
+        text-align: left; 
+        padding-left: 30px; 
+        }
+
+        .col-titulo { 
+        width: 50%; 
+        text-align: center; 
+        }
+
+        /* --- Imagen lado derecho --- */
+        .col-logo-der { 
+        width: 30%; 
+        text-align: right; 
+        padding-right: 30px; 
+        } 
+
+        header img { 
+        max-width: 150px; 
+        height: auto; 
+        }
+
+        header h1 { 
+        margin: 0; 
+        font-size: 100px; 
+        text-transform: uppercase; 
+        letter-spacing: 40px; 
+        }
+
+        header p { 
+        margin: 5px 0 0 0; 
+        font-size: 18px; 
+        } 
+        /* --- Barra de navegacion --- */
+        nav { background-color: green; padding: 10px 0; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }
+        nav ul li { display: inline; margin: 0 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 18px; }
+        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }
+
+        .contenedor-cuerpo { padding: 40px; text-align: center; min-height: 400px; }
+        h1.titulo-seccion { color: #006400; margin-bottom: 25px; }
+
+        /* Estilos de la lista de datos */
+        .tarjeta-fecha {
+            background-color: #f9f9f9;
+            border-left: 5px solid red;
+            margin: 15px auto;
+            padding: 15px;
+            max-width: 600px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .tarjeta-fecha h3 { margin: 0; color: #006400; font-size: 24px; }
+        .tarjeta-fecha p { margin: 5px 0 0 0; font-size: 18px; }
+
+        footer { background-color: black; padding: 30px; text-align: center; color: white; font-size: 20px; width: 100%; box-sizing: border-box; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-col col-logo-izq"><img src="cactus.jpg" alt="Cactus"></div>
+        <div class="header-col col-titulo">
+            <h1>SEPTIEMBRE</h1> 
+            <p><em>"Acontecimientos mas relevantes del mes patrio"</em></p>
+        </div>
+        <div class="header-col col-logo-der"><img src="muñeca.jpg" alt="Muñeca"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fechas.html">Fechas Importantes</a></li>
+            <li><a href="personajes.html">Personajes Importantes</a></li>
+            <li><a href="datos.html" class="activo">Datos Curiosos y Mitos</a></li>
+        </ul>
+    </nav>
+
+    <section class="contenedor-cuerpo">
+        <div class="tarjeta-fecha">
+            <h3>MITO 1</h3>
+            <p>Mito: Miguel Hidalgo tocó la campana de Dolores la madrugada del 16 de septiembre de 1810.</p>
+            <p>Realidad: El cura Hidalgo no tocó la campana. Envió al campanero de la parroquia, José Galván, a realizar esta tarea mientras él convocaba a la gente.</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>MITO 2</h3>
+            <p>Mito: El Grito de Independencia se celebra el 15 de septiembre porque ese día inició el movimiento.</p>
+            <p>Realidad: El llamado a las armas ocurrió en la madrugada del 16 de septiembre de 1810. El festejo se realiza la noche del 15 debido a una tradición impulsada en el porfiriato para coincidir con el cumpleaños del presidente Porfirio Díaz</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>MITO 3</h3>
+            <p>Mito: "El Pípila" quemó la puerta de la Alhóndiga de Granaditas como un héroe histórico documentado.</p>
+            <p>Realidad: No existen pruebas históricas de la existencia de este personaje; se considera una leyenda para representar a los mineros y combatientes anónimos</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>MITO 4</h3>
+            <p>Mito: La lucha comenzó con la idea de crear una república libre de España desde el primer día.</p>
+            <p>Realidad: Al principio, el movimiento era autonomista. Hidalgo no peleaba contra la monarquía española en sí, sino contra el mal gobierno, e incluso gritaba a favor del rey Fernando VII</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>DATO CURIOSO 1</h3>
+            <p>Dos actas de independencia: México cuenta con dos actas diferentes. La primera se firmó el 28 de septiembre de 1821 bajo el nombre de Imperio Mexicano. Tras la caída de Agustín de Iturbide, el documento se renovó en 1823 para establecer el término República</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>DATO CURIOSO 2</h3>
+            <p>El rostro de Hidalgo: Nadie sabe con certeza cómo era físicamente Miguel Hidalgo en su juventud o madurez. No existen pinturas ni retratos de él hechos en esa época; el rostro que conocemos hoy es producto de descripciones posteriores</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>DATO CURIOSO 3</h3>
+            <p>Origen de los chiles en nogada: Este platillo típico fue creado por las madres agustinas del convento de Santa Mónica en Puebla. Lo prepararon para celebrar el santo y cumpleaños de Agustín de Iturbide, usando los colores verde, blanco y rojo en honor al Ejército Trigarante</p>
+        </div>
+
+        <div class="tarjeta-fecha">
+            <h3>DATO CURIOSO 4</h3>
+            <p>El reconocimiento tardío: España no aceptó formalmente la independencia de México hasta 15 años después de la consumación, en el año 1836</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Nombre completo: Marrufo Alvarado Oyuki Alejandra | No.Control: a.24308051280591 | Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>
