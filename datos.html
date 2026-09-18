@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>SEPTIEMBRE - Datos Curiosos</title>
+    <title>SEPTIEMBRE - Inicio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { 
-        font-family: 'Bodoni MT Condensed', Times, serif; 
-        margin: 0; 
-        padding: 0; 
-        background-color: white; 
+        body {
+        font-family: 'Bodoni MT Condensed', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
         }
-
-        header { 
-        background-color: red; 
-        padding: 25px; 
-        color: white; 
-        display: table; 
-        width: 100%; 
-        box-sizing: border-box; 
+         /* --- Encabezado --- */
+        header {
+        background-color: red;
+        padding: 25px;
+        color: white;
+        width: 100%;
+        box-sizing: border-box; /*Sirve para el ancho,alto y bordes*/
         }
-
         .header-col {
-        display: table-cell;
-        vertical-align: middle;
+        vertical-align: middle;/*Centra un elemento en linea recta*/
         }
         /* --- Imagen lado izquierdo --- */
         .col-logo-izq { 
@@ -45,45 +42,89 @@
         } 
 
         header img { 
-        max-width: 150px; 
+        max-width: 150px; /*Limita el ancho*/
         height: auto; 
         }
 
         header h1 { 
         margin: 0; 
         font-size: 100px; 
-        text-transform: uppercase; 
-        letter-spacing: 40px; 
+        text-transform: uppercase; /*Muestra todo el texto seleccionado en mayusculas*/
+        letter-spacing: 40px; /*Espacio entre las letras*/
         }
 
         header p { 
-        margin: 5px 0 0 0; 
+        margin: 5px 0 0 0; /*Margen exterior*/
         font-size: 18px; 
         } 
+
         /* --- Barra de navegacion --- */
-        nav { background-color: green; padding: 10px 0; }
-        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }
-        nav ul li { display: inline; margin: 0 20px; }
-        nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 18px; }
-        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }
-
-        .contenedor-cuerpo { padding: 40px; text-align: center; min-height: 400px; }
-        h1.titulo-seccion { color: #006400; margin-bottom: 25px; }
-
-        /* Estilos de la lista de datos */
-        .tarjeta-fecha {
-            background-color: #f9f9f9;
-            border-left: 5px solid red;
-            margin: 15px auto;
-            padding: 15px;
-            max-width: 600px;
-            text-align: left;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        nav { background-color: green; padding: 10px 0; } /*Color y tamaño de la barra de navegacion*/
+        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; } /*Texto de la barra centrado*/
+        nav ul li { display: inline; margin: 0 20px; } /*Apartados de la barra subrayados*/
+        nav ul li a {
+            color: white;
+            text-decoration: none;/*Quita cualquier linea decorativa del texto*/
+            font-weight: bold;/*Texto en negrita*/
+            font-size: 18px;
         }
-        .tarjeta-fecha h3 { margin: 0; color: #006400; font-size: 24px; }
-        .tarjeta-fecha p { margin: 5px 0 0 0; font-size: 18px; }
+        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }/*Subrayado negro*/
 
-        footer { background-color: black; padding: 30px; text-align: center; color: white; font-size: 20px; width: 100%; box-sizing: border-box; margin-top: 20px; }
+        /* --- Cuerpo --- */
+        .contenedor-cuerpo {
+            padding: 40px;
+            text-align: center;
+            min-height: 400px; /*Altura minima*/
+            display: flex; /*Organiza y alinea los elementos*/
+            justify-content: center; /*Centra los elementos horizontalmente*/
+            align-items: center; /*Centra los elemrntos verticalmente*/
+        }
+
+        .contenido-flex {
+            display: flex; /*Organiza y alinea los elementos*/
+            align-items: center; /* Alinea verticalmente al centro */
+            justify-content: center; /*Centra los elementos horizontalmente*/
+            gap: 40px; /* Espacio entre el texto y la imagen */
+            text-align: left; /* Alinea el texto a la izquierda para mejor lectura */
+            max-width: 900px; /*Limita el ancho*/
+            margin: 0 auto;
+        }
+
+        .imagen-centro {
+            max-width: 300px; /*Limita el ancho*/
+            height: auto; /*Para que un elemento ajuste automáticamente su altura según el CONTENIDO*/
+            border-radius: 8px; */Redondea las esquinas*/
+        }
+
+        article {
+            flex: 1; /*Ocupa todo el espacio disponible*/
+        }
+
+        h1.titulo-seccion { 
+            color: #006400; 
+            margin-bottom: 15px; /*Agrega un espacio exterior en la parte inferor*/
+            font-size: 36px;
+        }
+
+        .texto-inicio {
+            font-size: 22px;
+            line-height: 1.4; /*Espacio vertical (interlineado) entre las líneas de un texto de forma proporcional*/
+            color: #333;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* --- Pie de pagina --- */
+        footer {
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            box-sizing: border-box; /*Incluye relleno y bordes dentro del ancho y alto*/
+            margin-top: 20px; /*Agerga un espacio en la parte superior de un elemento, separándolo de lo que tenga justo encima*/
+        }
     </style>
 </head>
 <body>
