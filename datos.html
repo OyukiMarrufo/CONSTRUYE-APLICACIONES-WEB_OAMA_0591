@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>SEPTIEMBRE - Inicio</title>
+    <title>SEPTIEMBRE - Datos Curiosos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -11,18 +11,20 @@
         padding: 0;
         background-color: white;
         }
-       
+         /* --- Encabezado --- */
         header {
         background-color: red;
         padding: 25px;
         color: white;
+        display: table;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box; /*Sirve para el ancho,alto y bordes*/
         }
         .header-col {
-        vertical-align: middle;
+        display: table-cell; /*Añadido para estructurar las columnas de la tabla*/
+        vertical-align: middle;/*Centra un elemento en linea recta*/
         }
-       
+        /* --- Imagen lado izquierdo --- */
         .col-logo-izq { 
         width: 30%; 
         text-align: left; 
@@ -34,7 +36,7 @@
         text-align: center; 
         }
 
-        
+        /* --- Imagen lado derecho --- */
         .col-logo-der { 
         width: 30%; 
         text-align: right; 
@@ -42,78 +44,79 @@
         } 
 
         header img { 
-        max-width: 150px;
+        max-width: 150px; /*Limita el ancho*/
         height: auto; 
         }
 
         header h1 { 
         margin: 0; 
         font-size: 100px; 
-        text-transform: uppercase; 
-        letter-spacing: 40px; 
+        text-transform: uppercase; /*Muestra todo el texto seleccionado en mayusculas*/
+        letter-spacing: 40px; /*Espacio entre las letras*/
         }
 
         header p { 
-        margin: 5px 0 0 0; 
+        margin: 5px 0 0 0; /*Margen exterior*/
         font-size: 18px; 
         } 
 
-       
-        nav { background-color: green; padding: 10px 0; } 
-        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; } 
-        nav ul li { display: inline; margin: 0 20px; }
+        /* --- Barra de navegacion --- */
+        nav { background-color: green; padding: 10px 0; } /*Color y tamaño de la barra de navegacion*/
+        nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; } /*Texto de la barra centrado*/
+        nav ul li { display: inline; margin: 0 20px; } /*Apartados de la barra subrayados*/
         nav ul li a {
             color: white;
-            text-decoration: none;
-            font-weight: bold;
+            text-decoration: none;/*Quita cualquier linea decorativa del texto*/
+            font-weight: bold;/*Texto en negrita*/
             font-size: 18px;
         }
-        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }
+        nav ul li a:hover, nav ul li a.activo { text-decoration: underline; color: black; }/*Subrayado negro*/
 
-       
+        /* --- Cuerpo --- */
         .contenedor-cuerpo {
             padding: 40px;
             text-align: center;
-            min-height: 400px; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
+            min-height: 400px; /*Altura minima*/
+            display: flex; /*Organiza y alinea los elementos*/
+            justify-content: center; /*Centra los elementos horizontalmente*/
+            align-items: center; /*Centra los elemrntos verticalmente*/
         }
 
         .contenido-flex {
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            gap: 40px; 
-            text-align: left; 
-            max-width: 900px; 
+            display: flex; /*Organiza y alinea los elementos*/
+            align-items: center; /* Alinea verticalmente al centro */
+            justify-content: center; /*Centra los elementos horizontalmente*/
+            gap: 40px; /* Espacio entre el texto y la imagen */
+            text-align: left; /* Alinea el texto a la izquierda para mejor lectura */
+            max-width: 900px; /*Limita el ancho*/
             margin: 0 auto;
         }
 
         .imagen-centro {
-            max-width: 300px; 
-            height: auto; 
+            max-width: 300px; /*Limita el ancho*/
+            height: auto; /*Para que un elemento ajuste automáticamente su altura según el CONTENIDO*/
+            border-radius: 8px; /*Redondea las esquinas*/
         }
 
         article {
-            flex: 1; 
+            flex: 1; /*Ocupa todo el espacio disponible*/
         }
 
         h1.titulo-seccion { 
             color: #006400; 
-            margin-bottom: 15px; 
+            margin-bottom: 15px; /*Agrega un espacio exterior en la parte inferor*/
             font-size: 36px;
         }
 
         .texto-inicio {
             font-size: 22px;
-            line-height: 1.4; 
+            line-height: 1.4; /*Espacio vertical (interlineado) entre las líneas de un texto de forma proporcional*/
             color: #333;
             margin: 0;
             font-weight: normal;
         }
 
-      
+        /* --- Pie de pagina --- */
         footer {
             background-color: black;
             padding: 30px;
@@ -121,74 +124,45 @@
             color: white;
             font-size: 20px;
             width: 100%;
-            box-sizing: border-box; 
-            margin-top: 20px; 
+            box-sizing: border-box; /*Incluye relleno y bordes dentro del ancho y alto*/
+            margin-top: 20px; /*Agerga un espacio en la parte superior de un elemento, separándolo de lo que tenga justo encima*/
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="header-col col-logo-izq"><img src="cactus.jpg" alt="Cactus"></div>
+        <div class="header-col col-logo-izq">
+            <img src="cactus.jpg" alt="Cactus">
+        </div>
         <div class="header-col col-titulo">
             <h1>SEPTIEMBRE</h1> 
             <p><em>"Acontecimientos mas relevantes del mes patrio"</em></p>
         </div>
-        <div class="header-col col-logo-der"><img src="muñeca.jpg" alt="Muñeca"></div>
+        <div class="header-col col-logo-der">
+            <img src="muñeca.jpg" alt="Muñeca">
+        </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" class="activo">Inicio</a></li>
             <li><a href="fechas.html">Fechas Importantes</a></li>
             <li><a href="personajes.html">Personajes Importantes</a></li>
-            <li><a href="datos.html" class="activo">Datos Curiosos y Mitos</a></li>
+            <li><a href="datos.html">Datos Curiosos y Mitos</a></li>
         </ul>
     </nav>
 
     <section class="contenedor-cuerpo">
-        <div class="tarjeta-fecha">
-            <h3>MITO 1</h3>
-            <p>Mito: Miguel Hidalgo tocó la campana de Dolores la madrugada del 16 de septiembre de 1810.</p>
-            <p>Realidad: El cura Hidalgo no tocó la campana. Envió al campanero de la parroquia, José Galván, a realizar esta tarea mientras él convocaba a la gente.</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>MITO 2</h3>
-            <p>Mito: El Grito de Independencia se celebra el 15 de septiembre porque ese día inició el movimiento.</p>
-            <p>Realidad: El llamado a las armas ocurrió en la madrugada del 16 de septiembre de 1810. El festejo se realiza la noche del 15 debido a una tradición impulsada en el porfiriato para coincidir con el cumpleaños del presidente Porfirio Díaz</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>MITO 3</h3>
-            <p>Mito: "El Pípila" quemó la puerta de la Alhóndiga de Granaditas como un héroe histórico documentado.</p>
-            <p>Realidad: No existen pruebas históricas de la existencia de este personaje; se considera una leyenda para representar a los mineros y combatientes anónimos</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>MITO 4</h3>
-            <p>Mito: La lucha comenzó con la idea de crear una república libre de España desde el primer día.</p>
-            <p>Realidad: Al principio, el movimiento era autonomista. Hidalgo no peleaba contra la monarquía española en sí, sino contra el mal gobierno, e incluso gritaba a favor del rey Fernando VII</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>DATO CURIOSO 1</h3>
-            <p>Dos actas de independencia: México cuenta con dos actas diferentes. La primera se firmó el 28 de septiembre de 1821 bajo el nombre de Imperio Mexicano. Tras la caída de Agustín de Iturbide, el documento se renovó en 1823 para establecer el término República</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>DATO CURIOSO 2</h3>
-            <p>El rostro de Hidalgo: Nadie sabe con certeza cómo era físicamente Miguel Hidalgo en su juventud o madurez. No existen pinturas ni retratos de él hechos en esa época; el rostro que conocemos hoy es producto de descripciones posteriores</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>DATO CURIOSO 3</h3>
-            <p>Origen de los chiles en nogada: Este platillo típico fue creado por las madres agustinas del convento de Santa Mónica en Puebla. Lo prepararon para celebrar el santo y cumpleaños de Agustín de Iturbide, usando los colores verde, blanco y rojo en honor al Ejército Trigarante</p>
-        </div>
-
-        <div class="tarjeta-fecha">
-            <h3>DATO CURIOSO 4</h3>
-            <p>El reconocimiento tardío: España no aceptó formalmente la independencia de México hasta 15 años después de la consumación, en el año 1836</p>
+        <div class="contenido-flex">
+            <!-- Imagen Izquierda -->
+            <img src="bandera.png" alt="Bandera" class="imagen-centro">
+            <article>
+                <h1 class="titulo-seccion">Cultura viva en cada rincón</h1>
+                <p class="texto-inicio">
+                    Septiembre llega acompañado de banderas, papel picado, música mexicana y los colores verde, blanco y rojo en calles, escuelas, hogares y comercios. Pero detrás de la celebración existe una razón histórica: durante este mes se concentran varias fechas cívicas más importantes de México.
+                </p>
+            </article>
         </div>
     </section>
 
@@ -197,4 +171,4 @@
     </footer>
 
 </body>
-</html>
+</html>q
